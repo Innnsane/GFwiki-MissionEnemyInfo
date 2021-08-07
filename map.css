@@ -1,0 +1,62 @@
+.eselect {
+    display: inline-block;
+    width: 200px;
+    position: relative;
+    vertical-align: middle;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E0E0E0;
+    transition: box-shadow 0.25s ease;
+    z-index: 2;
+}
+.eselect:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #000000ad;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    z-index: -2;
+}
+.eselect select {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.eselect select:focus {
+    outline: none;
+}
+
+#packselect input[type="checkbox"]:checked + label{
+    color: black;
+    background: #E0E0E0;
+    border: double;
+    padding: 4.5px 3px;
+}
+
+#packselect input[type="checkbox"] + label{
+    position: relative;
+    vertical-align: middle;
+    padding: 5.5px 5px;
+    margin: 0px 2px;
+    display: inline-block;
+    font-size: 13px;
+    color: #E0E0E0;
+    border: 1px solid #E0E0E0;
+    width: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#packselect input[type="checkbox"]{
+    display: none;
+}
